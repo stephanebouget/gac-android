@@ -1,0 +1,6 @@
+{
+	"appId": "io.ionic.starter",
+	"appName": "gac",
+	"webDir": "www",
+	"bundledWebRuntime": false
+}
