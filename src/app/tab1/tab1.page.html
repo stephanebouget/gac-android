@@ -1,8 +1,6 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
-    <ion-title>
-      Tab 1
-    </ion-title>
+    <ion-title> Tab 1 </ion-title>
   </ion-toolbar>
 </ion-header>
 
@@ -13,5 +11,20 @@
     </ion-toolbar>
   </ion-header>
 
-  <app-explore-container name="Tab 1 page"></app-explore-container>
+  <!-- <app-explore-container name="Tab 1 page"></app-explore-container> -->
+  <div fxFlexFill class="content">
+    <div class="app-weather-week">
+      <div class="weather-week-comp">
+        <iframe
+          id="iframe-weather-week"
+          fxFlexFill
+          scrolling="no"
+          [hidden]="loadingDatas"
+          frameborder="0"
+          style="position: absolute; height: 100%; border: none"
+          [src]="src ? src : null"
+        ></iframe>
+      </div>
+    </div>
+  </div>
 </ion-content>
